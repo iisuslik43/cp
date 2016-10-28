@@ -10,5 +10,5 @@ bin/phonebook.o: src/phonebook.c include/phonebook.h include/names.h
 	gcc -g -c src/phonebook.c -o bin/phonebook.o -lexpat
 
 clean:
-	rm -rf bin/*.o lab6
+	rm -rf bin/*.o lmain
 
