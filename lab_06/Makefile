@@ -1,7 +1,7 @@
-all: lab6
+all: main
 
-lab6: bin/phonebook.o bin/main.o
-	gcc -g bin/phonebook.o bin/main.o -o lab6 -lexpat 
+main: bin/phonebook.o bin/main.o
+	gcc -g bin/phonebook.o bin/main.o -o main -lexpat 
 
 bin/main.o: src/main.c include/phonebook.h
 	gcc -g -c src/main.c -o bin/main.o -lexpat 
